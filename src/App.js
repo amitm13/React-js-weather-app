@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import NotificationBar from './Components/NotificationBar';
+import Temprature from './Components/Temprature';
+import WeatherTable from './Components/WeatherTable';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="lg:w-2/4 md:w-2/4 sm:2/4 p-3 mx-auto align-center h-screen bg-gradient-to-b from-blue-700 to-blue-400">
+      <NotificationBar />
+
+      <Temprature />
+      
+      <WeatherTable />
     </div>
   );
 }
